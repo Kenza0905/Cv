@@ -1,52 +1,82 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Belferkous</title>
+<title>Formulaire</title>
 </head>
 <body>
-<h1>page personnel de Belferkous Kenza </h1>
-<h2>Informations de contact</h2>
-<ul>
- <li>Belferkous Kenza</li>
- <li>bordj bou arreridj </li>
- <li>kebelferkous_etd@esgen.edu.dz</li>
- <li>0779566885</li>
-</ul>
-<p>
-      Actuellement étudiante en deuxième année master de spécialité digital finance and banking managment à l’école ESGEN à Kolea, je suis à la recherche d’un stage d'un mois dans le cadre de ma formation.
+<h2>CV</h2>
+<form action="index.php" method="post">
+<label for="Nom">Nom </label>
+<input id="Nom" type="text" placeholder=" votre nom" required><br>
+<label for="Prenom">Prenom </label>
+<input id="Prenom" type="text" placeholder=" votre prenom" required><br>
+<label for="Ville">Ville </label>
+<input id="ville" type="text" placeholder="  votre ville" required><br>
+<label for="e-mail">e-mail </label>
+<input id="e-mail" type="email" placeholder="  votre e-mail" required><br>
+<label for="Numero">Numero </label>
+<input id="Numero" type="tel" placeholder=" 00-00-00-00-00" required max="10" pattern="[0]{1}[5-7]{1}[0-9]{8}"><br>
+<label for="Date">Date de naissance</label>
+<input id="Date" type="Date" required><br>
+<label for="Objectifs">Objectifs</label><br>
+<textarea id="Objectifs" required rows="15" cols="50"></textarea><br>
+<p> Langues <br>
+<label for="Francais">Francais</label>
+<input id="Francais" type="checkbox" value="Francais"><br>
+<label for="Intermediare F">Intermediaire</label>
+<input id="Intermediare F" type="radio" name="fr">
+<label id="Avance F">Avance</label>
+<input id="Avance F" type="radio" name="fr"><br>
+<label for="Anglais">Anglais</label>
+<input id="Anglais" type="checkbox" value="Anglais"><br>
+<label for="Intermediare A">Intermediaire</label>
+<input id="Intermediare A" type="radio" name="en">
+<label id="Avance A">Avance</label>
+<input id="Avance A" type="radio" name="en"><br>
+<label for="Arabe">Arabe</label>
+<input for="Arabe" type="checkbox" value="Arabe"><br>
+<label for="Intermediare Ar">Intermediaire</label>
+<input id="Intermediare Ar" type="radio" name="ar">
+<label id="Avance Ar">Avance</label>
+<input id="Avance Ar" type="radio" name="ar"><br>
+<label for="Autres Langues">Autres langues</label>
+<input id="Autres Langues" type="checkbox" value="Autres Langues"><br>
+<input id="Autres Langues" type="text">
 </p>
-<img src="photo.jpg" alt="photo personnel" width="200" height="auto">
-<ol>
-<li><a href="#formation">Formation</a></li>
-<li><a href="#competences">competences</a></li>
-<li><a href="#Centres d'intérêt">Centres d'intérêt</a></li>
-<li><a href="#information supplémentaire">Plus d'informations</a></li>
-</ol>
-<h2 id="formation">Formation</h2>
-<ul>
-<li>16/05/2024: Formation comptabilite, bureau comptabilite </li>
-<li>15/06/2023: Formation en informatique, institut de formation </li>
-<li>23/03/2023: Formation anglais, EL BASSIR SCHOOL </li> 
-<li>17/03/2024: stage decouvert,PHOENIX PHARMA </li>
-<li>11/08/2024: Formation en photographe,RG STUDIO </li>
-</ul>
-<h3 id="langues">Langues</h3>
-<ul>
-<li>Arabe: langue maternelle </li>
-<li>Français:avancé </li>
-<li>Anglais: intermédiaire</li> 
-</ul>
-<h4 id="Centres d'intérêt">Centre d'intérêt</h4>
-<ul>
-<li>sport</li>
-<li>photographe</li>
-<li>dessiner</li> 
-</ul>
-<h5 id="competences">competences</h5>
-<ol>
-<li>Compétence en Canva,Word,Excel,Access</li>
-<li>Développement de sites Web : HTML</li> 
-</ol>
-<p> Pour plus d'information, cliquez <a href="infosup.html">ici</a>.</p>
+<label for="Competence">Competence</label><br>
+<textarea id="Competence" required rows="15" cols="50"></textarea><br>
+ 
+ CENTRE D'INTÉRÊT<br>
+ <label for="SPORT ET ACTIVITÉS PHYSIQUES">SPORT ET ACTIVITÉS PHYSIQUES</label>
+<input id="SPORT ET Activités physiques" type="checkbox" value="SPORT ET Activités physiques"><br>
+<label for="Football ">Football</label>
+<input id="Football" type="radio" name="fr">
+<label id="Basketball">Basketball</label>
+<input id="Basketball" type="radio" name="fr"><br>
+<label id="Tennis">Tennis</label>
+<input id="Tennis" type="radio" name="fr"><br>
+<label for="TECHNOLOGIE ET SCIENCES">TECHNOLOGIE ET SCIENCES</label>
+<input id="TECHNOLOGIE ET SCIENCES" type="checkbox" value="TECHNOLOGIE ET SCIENCES"><br>
+<label for="programmation">Programmation</label>
+<input id="Programmation" type="radio" name="fr">
+<label id="electronique">Electronique</label>
+<input id="Electronique" type="radio" name="fr"><br>
+<label id="IA">IA</label>
+<input id="IA" type="radio" name="fr"><br>
+<label id="Autres">Autres</label>
+<input id="Autres" type="radio" name="fr"><br>l
+
+<label for="Ecole">Ecole</label>
+<select id="Ecole">
+<option value="ESGEN">ESGEN</option>
+<option value="ENSSEA">ENSSEA</option>
+<option value="ENSM">ENSM</option>
+<option value="EHEC">EHEC</option>
+<option value="ESC">ESC</option> 
+</select> <br><br>
+<p>
+<input type="submit">
+<input type="reset">
+</form>
 </body>
 </html>
